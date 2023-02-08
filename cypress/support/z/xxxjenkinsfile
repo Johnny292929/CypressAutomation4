@@ -1,0 +1,29 @@
+pipeline{
+    agent any
+    tools{nodejs "node"}
+
+
+stages{
+
+
+    stage('cypress parallel tests'){
+
+        parallel{
+            stage('tester a'){
+
+                steps{
+                    sh "npm run cy:browser2"
+                }
+            }
+             stage('tester b'){
+
+                steps{
+                    sh "npm run cy:browser2"
+                }
+            }
+
+        }
+
+    }
+
+}

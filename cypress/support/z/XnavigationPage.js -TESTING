@@ -1,0 +1,57 @@
+import { last } from "lodash"
+
+export class NavigationPage{
+
+constructor(){
+
+    // LEFT NAV
+        this.switchTo = '.pull-left'
+        this.navBar = 'a[title="TSHARP"]'
+       // this.homePage = 'p:contains("Home")'
+
+    // SCEDULER NAVIGATION
+        //this.schedulerMenu = 'Scheduler'
+       // this.resourcesPage = 'Resources'  
+
+    // USER INFO 
+        //this.userInfo = 'a.text-white'
+
+    // SIGN OUT
+        //this.sightOutMenu = 'a[title="Sign Out]'
+
+}
+
+homePage()
+{
+    return cy.get('p:contains("Home")')
+}
+
+resourcesPage()
+{
+    this.openSchedulerMenu();
+    return cy.contains('Resources').click()
+
+}
+
+openSchedulerMenu(){
+
+   return cy.contains('Scheduler').click()
+ 
+}
+openuserInfoMenu(){
+
+    return cy.get('a.text-white').last().click()
+   //cy.get('.navbar-nav li a.text-white .fa-user').click()
+ }
+
+ signOut()
+{
+    this.openuserInfoMenu();
+    return cy.get('a[title="Sign Out]').click()
+}
+
+}
+
+export const navigateTo = new NavigationPage()
+
+
