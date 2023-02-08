@@ -30,7 +30,7 @@ describe('Login', function()
 
   afterEach(function () {
 
-    navBar.navigateToSignOutMenu()
+    navBar.navigateToSignOutMenu() //
 
   })
 
