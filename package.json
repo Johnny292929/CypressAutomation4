@@ -166,7 +166,10 @@
     "cy:run_spec": "npx cypress run --spec cypress/integration/Testcases/AddSnivel4.js --key=cd3c4ccc-ee8a-4cf2-9901-c8b38317305d -headless --record" ,
     "cy:run_browser":"npm run cy:run_spec -- --parallel --browser edge --group Edge  & npm run cy:run_spec -- --parallel --browser chrome --group Chrome",
     "cy:run": "npx cypress run --headless --spec cypress/integration/Testcases/AddSnivel4.js --record --key=cd3c4ccc-ee8a-4cf2-9901-c8b38317305d --parallel",
-    "cy:browser2": "npm run cy:run -- --browser edge --group Edge & npm run cy:run -- --browser chrome --group Chrome"
+    "cy:run2": "npx cypress run --headless --spec cypress/integration/Testcases/AddSnivel4.js --record --key=cd3c4ccc-ee8a-4cf2-9901-c8b38317305d --parallel",
+    "cy:browser2": "npm run cy:run -- --browser edge --group Edge & npm run cy:run -- --browser chrome --group Chrome",
+    "cy:browser3": "npm run cy:run2 -- --browser edge --group Edge & npm run cy:run -- --browser chrome --group Chrome"
+    
   },
   "author": "",
   "license": "ISC",
