@@ -6,13 +6,13 @@ stages{
     stage('cypress parallel tests'){
 
         parallel{
-            stage('tester a'){
+            stage('tester aa'){
 
                 steps{
                     bat "npm run cy:browser2"
                 }
             }
-             stage('tester b'){
+             stage('tester bb'){
 
                 steps{
                     bat "npm run cy:browser2"
