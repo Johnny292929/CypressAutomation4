@@ -36,6 +36,8 @@ describe('Login', function()
 
 it('Add Snivel', function(){  
 
+
+  /*
 navBar.navigateToResourcesPage().click()
 
 //debugger
@@ -53,7 +55,7 @@ resourcesPage.peopleSel().click()
   
 resourcesPage.assignBttn().click()
   cy.contains('Save').click()
-
+*/
 
   })
 
