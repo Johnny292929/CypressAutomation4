@@ -46,7 +46,7 @@ resourcesPage.snivelSel().click()
 
 resourcesPage.peopleSel().click()
   .type("A").get(peopleList)
-  .contains(peopleList, 'Anderson').click()
+  .contains(peopleList, 'Alfano').click()
 
 resourcesPage.peopleSel().click()
   .type('{enter}')
