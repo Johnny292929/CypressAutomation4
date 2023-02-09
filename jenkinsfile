@@ -19,6 +19,13 @@ stages{
                 }
              }
              
+             stage('tester cc'){
+
+                steps{
+                    bat "npm run cy:browser3"
+                }
+             }
+             
 
         }
 
