@@ -23,7 +23,9 @@ describe('Login', function()
     cy.fixture('DATA').then((data) => {
         cy.visit("/")
        // cy.visit(Cypress.env('host'))
-        cy.login1(data.name)
+       
+       this.data = data
+        cy.login1(this.data.name)
   
     })  
   })
@@ -48,14 +50,16 @@ resourcesPage.snivelSel().click()
 
 resourcesPage.peopleSel().click()
   .type("A").get(peopleList)
-  .contains(peopleList, 'Anderson').click()
-
-resourcesPage.peopleSel().click()
-  .type('{enter}')
+  .contains(peopleList, this.data.peopleListItemName).click()
+ 
+ // resourcesPage.peopleSel().type('{enter}').type('{enter}')
+//resourcesPage.peopleSel().click()
+  //.type('{enter}')
   
 resourcesPage.assignBttn().click()
-  cy.contains('Save').click()
-
+  //cy.contains('Save').click()
+  cy.contains('Cancel').click()
+ 
 
   })
 
