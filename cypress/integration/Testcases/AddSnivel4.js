@@ -37,7 +37,7 @@ describe('Login', function()
 it('Add Snivel', function(){  
 
 
-  /*
+  
 navBar.navigateToResourcesPage().click()
 
 //debugger
@@ -48,14 +48,14 @@ resourcesPage.snivelSel().click()
 
 resourcesPage.peopleSel().click()
   .type("A").get(peopleList)
-  .contains(peopleList, 'Anthony').click()
+  .contains(peopleList, 'Anderson').click()
 
 resourcesPage.peopleSel().click()
   .type('{enter}')
   
 resourcesPage.assignBttn().click()
   cy.contains('Save').click()
-*/
+
 
   })
 
