@@ -26,6 +26,12 @@ stages{
                 }
              }
              
+               stage('tester dd'){
+
+                steps{
+                    bat "npm run cy:run2"
+                }
+             }
 
         }
 
