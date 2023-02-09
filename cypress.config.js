@@ -14,7 +14,8 @@ module.exports = defineConfig({
       
     }, 
     
-    baseUrl:'https://sharptnrslot0qa.devsd.innovasi.com/',
+    baseUrl:'https://tsharpslot1qa.devsd.innovasi.com/',
+    //baseUrl:'https://sharptnrslot0qa.devsd.innovasi.com/',
     specPattern:'cypress/integration/Testcases/*.js'
     //specPattern:'cypress/e2e/1-getting-started/*.cy.js'
     //specPattern:'cypress/e2e/2-advanced-examples/*.cy.js'
