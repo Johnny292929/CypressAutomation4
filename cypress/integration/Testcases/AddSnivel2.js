@@ -23,7 +23,7 @@ describe('Login', function()
     cy.fixture('DATA').then((data) => {
         cy.visit("/")
        // cy.visit(Cypress.env('host'))
-        cy.login1(data.name)
+        cy.login1(data.name2)
   
     })  
   })
