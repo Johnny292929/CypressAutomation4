@@ -18,13 +18,6 @@ stages{
                     bat "npm run cy:browser2"
                 }
              }
-             stage('tester cc'){
-
-                steps{
-                    bat "npm run cy:browser2"
-                }
-             }
-
              
 
         }
