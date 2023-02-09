@@ -19,11 +19,11 @@ stages{
                 steps{
                     bat "npm run cy:run"
                 }
-            }
+             }
 
         }
 
     }
 
 }
-}
+
