@@ -11,13 +11,13 @@ stages{
             stage('tester a'){
 
                 steps{
-                    bat "npm run cy:browser2"
+                    bat "npm run cy:run"
                 }
             }
              stage('tester b'){
 
                 steps{
-                    bat "npm run cy:browser2"
+                    bat "npm run cy:run"
                 }
             }
 
