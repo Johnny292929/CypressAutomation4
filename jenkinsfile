@@ -32,32 +32,6 @@ stages{
                     bat "npm run cy:browser3"
                 }
              }
-              stage('tester ee'){
-
-                steps{
-                    bat "npm run cy:browser3"
-                }
-            }
-             stage('tester ff'){
-
-                steps{
-                    bat "npm run cy:browser3"
-                }
-             }
-             
-             stage('tester gg'){
-
-                steps{
-                    bat "npm run cy:browser3"
-                }
-             }
-             
-               stage('tester hh'){
-
-                steps{
-                    bat "npm run cy:browser3"
-                }
-             }
 
         }
 
