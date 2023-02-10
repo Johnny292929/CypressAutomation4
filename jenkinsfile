@@ -9,27 +9,27 @@ stages{
             stage('tester aa'){
 
                 steps{
-                    bat "npm run cy:run2"
+                    bat "npm run cy:browser3"
                 }
             }
              stage('tester bb'){
 
                 steps{
-                    bat "npm run cy:run2"
+                    bat "npm run cy:browser3"
                 }
              }
              
              stage('tester cc'){
 
                 steps{
-                    bat "npm run cy:run2"
+                    bat "npm run cy:browser3"
                 }
              }
              
                stage('tester dd'){
 
                 steps{
-                    bat "npm run cy:run2"
+                    bat "npm run cy:browser3"
                 }
              }
 
