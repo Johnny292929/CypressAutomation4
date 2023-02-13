@@ -169,7 +169,7 @@
     "cy:browser2": "npm run cy:run -- --browser edge --group Edge & npm run cy:run -- --browser chrome --group Chrome",
     
     "electron-test":"cypress run",
-    "script-electron":"npm run",
+    "script-electron":"npm run electron-test",
 
     "cy:run2": "npx cypress run --headless --browser chrome --record --key=cd3c4ccc-ee8a-4cf2-9901-c8b38317305d",
     "cy:run3": "npx cypress run --headless --browser chrome --record --key=cd3c4ccc-ee8a-4cf2-9901-c8b38317305d",
