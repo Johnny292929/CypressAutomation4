@@ -169,7 +169,7 @@
     "cy:browser2": "npm run cy:run -- --browser edge --group Edge & npm run cy:run -- --browser chrome --group Chrome",
 
 
-    "cy:run2": "npx cypress run --headless --browser chrome --record --key=cd3c4ccc-ee8a-4cf2-9901-c8b38317305d --parallel",
+    "cy:run2": "npx cypress run --headless --browser chrome --record --key=cd3c4ccc-ee8a-4cf2-9901-c8b38317305d",
 
     "cy:browser3":"npm run cy:run2 -- --browser chrome --group Chrome & npm run cy:run2 -- --browser edge --group Edge"
     

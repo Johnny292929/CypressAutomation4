@@ -1,0 +1,106 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 0,
+    "passes": 0,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-02-12T14:32:48.366Z",
+    "end": "2023-02-12T14:33:43.644Z",
+    "duration": 55278,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "03e2ea5d-4ec3-40b8-bd66-f1efe5316c2d",
+      "title": "",
+      "fullFile": "cypress\\integration\\Testcases\\AddSnivel2.js",
+      "file": "cypress\\integration\\Testcases\\AddSnivel2.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "ba7a29bf-8a74-46e3-a9ac-feab5d947a81",
+          "title": "Login",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Add Snivel",
+              "fullTitle": "Login Add Snivel",
+              "timedOut": null,
+              "duration": 34297,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "navBar.navigateToResourcesPage().click();\n//debugger\n//cy.pause()\nresourcesPage.newBttn().click();\nresourcesPage.snivelSel().click();\nresourcesPage.peopleSel().click().type(\"A\").get(peopleList).contains(peopleList, this.data.peopleListItemName).click();\n// resourcesPage.peopleSel().type('{enter}').type('{enter}')\n//resourcesPage.peopleSel().click()\n//.type('{enter}')\nresourcesPage.assignBttn().click();\n//cy.contains('Save').click()\ncy.contains('Cancel').click();",
+              "err": {},
+              "uuid": "fee9e9b7-cde5-4bbc-bc81-15bb7ec3e94f",
+              "parentUUID": "ba7a29bf-8a74-46e3-a9ac-feab5d947a81",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "fee9e9b7-cde5-4bbc-bc81-15bb7ec3e94f"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 34297,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/reports"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

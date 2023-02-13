@@ -3,8 +3,8 @@
 import { slowCypressDown } from 'cypress-slow-down'
 // slowCypressDown(2000)
 
-import LoginPage from '../pageObjects/LoginPage'
 
+import LoginPage from '../pageObjects/LoginPage'
 
 import navigationBar  from '../../support/page_objects/NavigationBar'
 import ResourcesPage from '../../support/page_objects/ResourcesPage'
@@ -56,6 +56,8 @@ resourcesPage.peopleSel().click()
 //resourcesPage.peopleSel().click()
   //.type('{enter}')
   
+
+
 resourcesPage.assignBttn().click()
   //cy.contains('Save').click()
   cy.contains('Cancel').click()

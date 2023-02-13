@@ -1,0 +1,110 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2023-02-12T14:35:24.944Z",
+    "end": "2023-02-12T14:36:31.827Z",
+    "duration": 66883,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "9dd18c12-dbe2-42e5-bf70-bb851925dbc5",
+      "title": "",
+      "fullFile": "cypress\\integration\\Testcases\\AddSnivel4.js",
+      "file": "cypress\\integration\\Testcases\\AddSnivel4.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "c5507a47-c3df-4ec1-977c-166ea2623d90",
+          "title": "Login",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Add Snivel",
+              "fullTitle": "Login Add Snivel",
+              "timedOut": null,
+              "duration": 32501,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "navBar.navigateToResourcesPage().click();\n//debugger\n//cy.pause()\nresourcesPage.newBttn().click();\nresourcesPage.snivelSel().click();\nresourcesPage.peopleSel().click().type(\"A\").get(peopleList).contains(peopleList, this.data.peopleListItemName).click();\n// resourcesPage.peopleSel().type('{enter}').type('{enter}')\n//resourcesPage.peopleSel().click()\n//.type('{enter}')\nresourcesPage.assignBttn().click();\n//cy.contains('Save').click()\ncy.contains('Cancel').click();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 20000ms: Expected to find content: 'ALFANO' within the element: <span> and with the selector: 'li > a > span' but never did.",
+                "estack": "AssertionError: Timed out retrying after 20000ms: Expected to find content: 'ALFANO' within the element: <span> and with the selector: 'li > a > span' but never did.\n    at Context.eval (webpack:///./cypress/integration/Testcases/AddSnivel4.js:53:3)",
+                "diff": null
+              },
+              "uuid": "6a4418b4-d93b-4c1d-abc8-800c9fead105",
+              "parentUUID": "c5507a47-c3df-4ec1-977c-166ea2623d90",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "6a4418b4-d93b-4c1d-abc8-800c9fead105"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 32501,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/reports"
+      },
+      "version": "6.2.0"
+    }
+  }
+}
