@@ -168,7 +168,7 @@
     "cy:run": "npx cypress run --headless --spec cypress/integration/Testcases/AddSnivel4.js --record --key=cd3c4ccc-ee8a-4cf2-9901-c8b38317305d --parallel",
     "cy:browser2": "npm run cy:run -- --browser edge --group Edge & npm run cy:run -- --browser chrome --group Chrome",
     
-    "electron-test":"cypress run",
+    "electron-test":"npm cypress run",
     "script-electron":"npm run electron-test",
 
     "cy:run2": "npx cypress run --headless --browser chrome --record --key=cd3c4ccc-ee8a-4cf2-9901-c8b38317305d",
