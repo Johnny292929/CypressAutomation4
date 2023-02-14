@@ -10,7 +10,7 @@ module.exports = defineConfig({
   projectId: '1huejn',
 
   e2e: {setupNodeEvents(on, config) {
-    baseUrl:'https://tsharpslot1qa.devsd.innovasi.com/',
+    baseUrl:'https://tsharpslot1qa.devsd.innovasi.com/'
     }, 
     
     specPattern:'cypress/integration/Testcases/*.js'
