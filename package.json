@@ -2,7 +2,7 @@
   "reporter":"junit",
   "reporterOptions":{
     "mochaFile":"resuts/my-test-output-[hash].xml"
-  },xxx
+  },
   "devDependencies": {
     "cypress": "^12.2.0",
     "cypress-slow-down": "^1.2.1"
