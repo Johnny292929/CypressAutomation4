@@ -4,7 +4,7 @@
 "description":"",
 "main": "index.js",
 "scripts":{
-  "tests": "cypress run"
+  "test": "cypress run"
 },
 "author": "Johnny",
 "license":"ISC",
