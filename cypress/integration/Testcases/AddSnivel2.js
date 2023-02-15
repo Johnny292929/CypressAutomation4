@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
 
-import { slowCypressDown } from 'cypress-slow-down'
+//import { slowCypressDown } from 'cypress-slow-down'
 //slowCypressDown(2000)
 
 import navigationBar  from '../../support/page_objects/NavigationBar'
