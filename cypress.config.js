@@ -17,7 +17,6 @@ module.exports = defineConfig({
  
   },
   watchForFileChanges:true,
-  reporter: "mochawesome",
   reporterOptions:{
     charts:true,
     overwrite:false,
