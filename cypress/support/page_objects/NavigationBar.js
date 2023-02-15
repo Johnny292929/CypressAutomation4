@@ -43,7 +43,6 @@ openuserInfoMenu(){
     this.openuserInfoMenu();
     
     return cy.contains('Sign Out').click()
-   
 }
 
 }

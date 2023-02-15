@@ -3,8 +3,6 @@
 import { slowCypressDown } from 'cypress-slow-down'
 // slowCypressDown(2000)
 
-import LoginPage from '../pageObjects/LoginPage'
-
 
 import navigationBar  from '../../support/page_objects/NavigationBar'
 import ResourcesPage from '../../support/page_objects/ResourcesPage'
