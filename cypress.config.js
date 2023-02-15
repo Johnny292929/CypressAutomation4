@@ -12,20 +12,16 @@ module.exports = defineConfig({
   e2e: {setupNodeEvents(on, config) {
   
     }, 
-    baseUrl:'https://tsharpslot1qa.devsd.innovasi.com/',
+    //baseUrl:'https://tsharpslot1qa.devsd.innovasi.com/',
+    baseUrl:'https://sharpproductionmirror.devsd.innovasi.com/',
     specPattern:'cypress/integration/Testcases/*.js'
  
   },
   watchForFileChanges:true,
+  reporter: "junit",
   reporterOptions:{
-    charts:true,
-    overwrite:false,
-    html:false,
-    json:true,
-    reportDir:"cypress/reports"
-
+   "mochaFile":"results/my-test-output-[hash].xml"
   }
  
-
 })
 
