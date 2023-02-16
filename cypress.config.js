@@ -12,7 +12,7 @@ module.exports = defineConfig({
   e2e: {setupNodeEvents(on, config) {
   
     }, 
-     baseUrl:'https://tsharpslot1qa.devsd.innovasi.com/',
+    // baseUrl:'https://tsharpslot1qa.devsd.innovasi.com/',
     // baseUrl:'https://sharpproductionmirror.devsd.innovasi.com/',
      //baseUrl:'https://www.google.com',
     //specPattern:'cypress/integration/Testcases/*.js',
