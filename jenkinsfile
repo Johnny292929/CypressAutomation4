@@ -9,29 +9,16 @@ stages{
             stage('Agent 1'){
 
                 steps{
-                    bat "npm run cy:browser3"
+                    bat "npm run test"
                 }
             }
              stage('Agent 2'){
 
                 steps{
-                    bat "npm run cy:browser3"
+                    bat "npm run test"
                 }
              }
-             
-             stage('Agent 3'){
-
-                steps{
-                    bat "npm run cy:browser3test"
-                }
-             }
-             
-               stage('Agent 4'){
-
-                steps{
-                    bat "npm run cy:browser3"
-                }
-             }
+          
         }
 
     }
