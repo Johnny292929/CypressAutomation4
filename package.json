@@ -4,12 +4,7 @@
     "description":"",
     "main":"index.js",
     "scripts":{
-        
-
-
-        "testA":"npx cypress run --headless --record --key=cd3c4ccc-ee8a-4cf2-9901-c8b38317305d",
-        "test":"npm run testA -- --browser edge --group Edge --parallel & npm run testA -- --browser chrome --group Chrome --parallel",
-
+        "test":"cypress run --key=cd3c4ccc-ee8a-4cf2-9901-c8b38317305d --record",
 
         "cy:open": "cypress open",
         "cy:run_spec": "npx cypress run --spec cypress/integration/Testcases/AddSnivel1.js --key=cd3c4ccc-ee8a-4cf2-9901-c8b38317305d --headless --record",
