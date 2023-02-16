@@ -26,13 +26,12 @@ stages{
                 }
              }
              
-               stage('Agent 4){
+               stage('Agent 4'){
 
                 steps{
                     bat "npm run test"
                 }
              }
-
         }
 
     }
