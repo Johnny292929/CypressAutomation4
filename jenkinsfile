@@ -1,41 +1,26 @@
-pipeline{
-    agent any
-   // tools{nodejs "node"}
-stages{
-
-    stage('cypress parallel tests'){
-
-        parallel{
-            stage('Agent 1'){
-
-                steps{
-                    bat "npm run test"
-                }
-            }
-             stage('Agent 2'){
-
-                steps{
-                    bat "npm run test"
-                }
-             }
-             
-             stage('Agent 3'){
-
-                steps{
-                    bat "npm run test"
-                }
-             }
-             
-               stage('Agent 4'){
-
-                steps{
-                    bat "npm run test"
-                }
-             }
-        }
-
+stage('run test') {
+  parallel {
+   stage('tester A') {
+    steps {
+     bat "npm run test"
     }
-
-}
-
-}
+   }
+   // second tester runs the same command
+   stage('tester B') {
+    steps {
+    bat "npm run test"
+    }
+   }
+   // third tester runs the same command
+   stage('tester C') {
+    steps {
+    bat "npm run test"
+    }
+   }
+   // fourth tester runs the same command
+   stage('tester D') {
+    steps {
+     bat "npm run test"
+    }
+   }
+  }
