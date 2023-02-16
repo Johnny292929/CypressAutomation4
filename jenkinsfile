@@ -17,7 +17,7 @@ stages{
                 steps{
                     bat "npm run test"
                 }
-             }Parallel 1
+             }
              
              stage('Agent 3'){
 
