@@ -48,9 +48,12 @@ resourcesPage.peopleSel().click()
   .type("A").get(peopleList)
   .contains(peopleList, this.data.peopleListItemName).click()
 
-resourcesPage.assignBttn().click()
-  //cy.contains('Save').click()
   cy.contains('Cancel').click()
+  
+
+//resourcesPage.assignBttn().click()
+  //cy.contains('Save').click()
+ // cy.contains('Cancel').click()
  
 
   })

@@ -3,6 +3,7 @@
 //import { slowCypressDown } from 'cypress-slow-down'
 //slowCypressDown(2000)
 
+//import LoginPage from '../pageObjects/LoginPage'
 import navigationBar  from '../../support/page_objects/NavigationBar'
 import ResourcesPage from '../../support/page_objects/ResourcesPage'
 import { timesSeries } from 'async'
@@ -19,7 +20,7 @@ describe('Login', function()
   beforeEach(function(){
     cy.fixture('DATA').then((data) => {
         cy.visit("/")
-       // cy.visit(Cypress.env('host'))
+       // cy.visit(Cypress.env('host')) 
        
        this.data = data
         cy.login1(this.data.name)
@@ -34,8 +35,6 @@ describe('Login', function()
   })
 
 it('Add Snivel', function(){  
-
-
   
 navBar.navigateToResourcesPage().click()
 
@@ -48,21 +47,19 @@ resourcesPage.snivelSel().click()
 resourcesPage.peopleSel().click()
   .type("A").get(peopleList)
   .contains(peopleList, this.data.peopleListItemName).click()
- 
- // resourcesPage.peopleSel().type('{enter}').type('{enter}')
-//resourcesPage.peopleSel().click()
-  //.type('{enter}')
-  
-resourcesPage.assignBttn().click()
-  //cy.contains('Save').click()
+
   cy.contains('Cancel').click()
+  
+
+//resourcesPage.assignBttn().click()
+  //cy.contains('Save').click()
+ // cy.contains('Cancel').click()
  
 
   })
 
   
 })
-
 
 
   
