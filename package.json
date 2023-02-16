@@ -8,7 +8,7 @@
 
 
         "testA":"npx cypress run --headless --record --key=cd3c4ccc-ee8a-4cf2-9901-c8b38317305d",
-        "test":"npm run testA -- --browser edge --group Edge --ci-build-id 5 --parallel & npm run testA -- --browser chrome --group Chrome --ci-build-id 5 --parallel",
+        "test":"npm run testA -- --browser edge --group Edge --parallel & npm run testA -- --browser chrome --group Chrome --parallel",
 
 
         "cy:open": "cypress open",
