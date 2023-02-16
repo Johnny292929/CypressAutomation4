@@ -6,32 +6,33 @@ stages{
     stage('cypress parallel tests'){
 
         parallel{
-            stage('Agent 1'){
+            stage('Parallel 1'){
 
                 steps{
-                    bat "npm run test"
+                    bat "npm run cy:browser3"
                 }
             }
-             stage('Agent 2'){
+             stage('Parallel 2'){
 
                 steps{
-                    bat "npm run test"
+                    bat "npm run cy:browser3"
+                }
+             }Parallel 1
+             
+             stage('Parallel 3'){
+
+                steps{
+                    bat "npm run cy:browser3"
                 }
              }
              
-             stage('Agent 3'){
+               stage('Parallel 4){
 
                 steps{
-                    bat "npm run test"
+                    bat "npm run cy:browser3"
                 }
              }
-             
-               stage('Agent 4'){
 
-                steps{
-                    bat "npm run test"
-                }
-             }
         }
 
     }
