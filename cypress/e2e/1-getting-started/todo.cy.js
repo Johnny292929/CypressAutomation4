@@ -51,7 +51,7 @@ describe('example to-do app', () => {
     // In addition, with the two default items, we should have a total of 3 elements in the list.
     // Since assertions yield the element that was asserted on,
     // we can chain both of these assertions together into a single statement.
-    cy.get('.todoxxx-list li')
+    cy.get('.todo-list li')
       .should('have.length', 3)
       .last()
       .should('have.text', newItem)
