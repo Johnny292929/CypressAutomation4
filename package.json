@@ -25,7 +25,6 @@
             "core-util-is":"^1.0.3",
             "cypress":"^12.2.0",
             "mochawesome-report-generator":"^6.2.0"
-            
             }
         
         }
