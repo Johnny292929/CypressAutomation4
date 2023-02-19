@@ -9,16 +9,6 @@ constructor(){
         this.navBar = 'a[title="TSHARP"]'
         this.homePage = 'p:contains("Home")'
 
-    // SCEDULER NAVIGATION
-        //this.schedulerMenu = 'Scheduler'
-        //this.resourcesPage = 'Resources'  
-
-    // USER INFO 
-        //this.userInfo = 'a.text-white'
-
-    // SIGN OUT
-       // this.sightOutMenu = 'a[title="Sign Out]'
-
 }
 navigateToHomePage()
 {  
@@ -29,6 +19,12 @@ navigateToResourcesPage()
 {
     this.openSchedulerMenu();
     return cy.contains('Resources') 
+}
+
+navigateToGroundEvents()
+{
+    this.openSchedulerMenu();
+    return cy.contains('Ground Events') 
 }
 
 openSchedulerMenu(){

@@ -3,14 +3,6 @@ class ResourcesPage{
 
 
     constructor(){
-
-    //RESOURCES PAGE
-       // this.newButton ='button:contains("New")'
-
-    // SNIVEL PAGE
-        //this.snivelSelect ='Snivel'
-        //this.peopleSelect ='#DefaultComboBoxInputId'
-        //this.assignButton ='#AssignDefaultListNameButtonId-0-0'
         this.peopleList ='li > a > span'   
     }
 

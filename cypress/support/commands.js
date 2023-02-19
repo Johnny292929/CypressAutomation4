@@ -24,6 +24,8 @@
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 
+
+
  Cypress.Commands.add('login1', (username) =>  {
     
     cy.log(username + " (AppAdm)")

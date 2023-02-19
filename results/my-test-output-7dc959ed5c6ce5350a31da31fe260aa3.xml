@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="33.421" tests="1" failures="0">
+  <testsuite name="Root Suite" timestamp="2023-02-19T03:01:39" tests="0" file="cypress\integration\Testcases\AddSnivel1.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Login" timestamp="2023-02-19T03:01:39" tests="1" time="33.393" failures="0">
+    <testcase name="Login Add Snivel" time="32.751" classname="Add Snivel">
+    </testcase>
+  </testsuite>
+</testsuites>
