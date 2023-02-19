@@ -4,7 +4,7 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "test": "npm cypress run --key=cd3c4ccc-ee8a-4cf2-9901-c8b38317305d --record",
+        "test": "cypress run --key=cd3c4ccc-ee8a-4cf2-9901-c8b38317305d --record",
        
         "cy:open": "cypress open",
         "cy:run_spec": "npx cypress run --spec cypress/integration/Testcases/AddSnivel1.js --key=cd3c4ccc-ee8a-4cf2-9901-c8b38317305d --headless --record",
