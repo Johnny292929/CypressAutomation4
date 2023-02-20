@@ -18,6 +18,18 @@ stages{
                     bat "npm run test"
                 }
              }
+               stage('Agent 3'){
+
+                steps{
+                    bat "npm run test"
+                }
+             }
+               stage('Agent 4'){
+
+                steps{
+                    bat "npm run test"
+                }
+             }
           
         }
 
