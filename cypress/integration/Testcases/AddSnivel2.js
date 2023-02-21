@@ -20,9 +20,10 @@ describe('Login', function()
   beforeEach(function(){
     cy.fixture('DATA').then((data) => {
         cy.visit("/")
-       // cy.visit(Cypress.env('host')) 
+        
+       //cy.visit(Cypress.env('host')) 
        
-       this.data = data
+       this.data = data 
         cy.login1(this.data.name)
   
     })  
@@ -32,14 +33,25 @@ describe('Login', function()
 
     navBar.navigateToSignOutMenu() //
 
+
+
+
   })
 
-it('Add Snivel', function(){  
+it('Add Snivel 2', function(){  
   
 navBar.navigateToResourcesPage().click()
 
-//debugger
+//-- cy.lighthouse({
+ // perforamance: 90,
+  //'first-contentful-paint':3000,
+ // 'largest-contentful-paint': 4000,
+ // 'cumulative-layout-shift': 0.25
+// })  
+
 //cy.pause()
+
+
 resourcesPage.newBttn().click()
 
 resourcesPage.snivelSel().click()
@@ -47,8 +59,9 @@ resourcesPage.snivelSel().click()
 resourcesPage.peopleSel().click()
   .type("A").get(peopleList)
   .contains(peopleList, this.data.peopleListItemName).click()
-
+  
   cy.contains('Cancel').click()
+  debugger
   
 
 //resourcesPage.assignBttn().click()

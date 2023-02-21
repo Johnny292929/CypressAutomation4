@@ -20,12 +20,13 @@ describe('Login', function()
   beforeEach(function(){
     cy.fixture('DATA').then((data) => {
         cy.visit("/")
+        
+       //cy.visit(Cypress.env('host')) 
+       
+       this.data = data 
+        cy.login1(this.data.name)
 
         
-       // cy.visit(Cypress.env('host')) 
-       
-       this.data = data
-        cy.login1(this.data.name)
   
     })  
   })
@@ -33,6 +34,8 @@ describe('Login', function()
   afterEach(function () {
 
     navBar.navigateToSignOutMenu() //
+
+
 
 
   })
