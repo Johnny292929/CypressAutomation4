@@ -21,12 +21,11 @@ describe('Login', function()
     cy.fixture('DATA').then((data) => {
         cy.visit("/")
         
-       //cy.visit(Cypress.env('host')) 
+      // cy.visit(Cypress.env('host')) 
        
        this.data = data 
-        cy.login1(this.data.name)
 
-        
+        cy.login1(this.data.name)
   
     })  
   })
@@ -63,7 +62,9 @@ resourcesPage.peopleSel().click()
   .contains(peopleList, this.data.peopleListItemName).click()
   
   cy.contains('Cancel').click()
-  //debugger
+ //debugger
+
+  
   
 
 //resourcesPage.assignBttn().click()
