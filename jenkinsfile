@@ -23,6 +23,8 @@ stages{
                 steps{
                     bat "npm run test"
                 }
+             }
+               
           
         }
 
