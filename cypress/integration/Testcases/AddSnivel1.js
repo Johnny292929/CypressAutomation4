@@ -3,6 +3,9 @@
 //import { slowCypressDown } from 'cypress-slow-down'
 //slowCypressDown(2000)
 
+//import sqlServer from 'cypress-sql-server';
+//sqlServer.loadDBCommands();
+
 //import LoginPage from '../pageObjects/LoginPage'
 import navigationBar  from '../../support/page_objects/NavigationBar'
 import ResourcesPage from '../../support/page_objects/ResourcesPage'
@@ -19,12 +22,12 @@ describe('Login', function()
   
   beforeEach(function(){
     cy.fixture('DATA').then((data) => {
-        cy.visit("/")
+       cy.visit("/") 
         
-      // cy.visit(Cypress.env('host')) 
-       
+      ///cy.visit(Cypress.env('host')) 
+      
        this.data = data 
-
+  
         cy.login1(this.data.name)
   
     })  
@@ -34,9 +37,8 @@ describe('Login', function()
 
     navBar.navigateToSignOutMenu() //
 
-
-
-
+   
+   
   })
 
 it('Add Snivel', function(){  
@@ -44,7 +46,7 @@ it('Add Snivel', function(){
 navBar.navigateToResourcesPage().click()
 
 //-- cy.lighthouse({
- // perforamance: 90,
+ // performance: 90,
   //'first-contentful-paint':3000,
  // 'largest-contentful-paint': 4000,
  // 'cumulative-layout-shift': 0.25
@@ -62,7 +64,7 @@ resourcesPage.peopleSel().click()
   .contains(peopleList, this.data.peopleListItemName).click()
   
   cy.contains('Cancel').click()
- //debugger
+debugger
 
   
   

@@ -24,12 +24,14 @@ module.exports = defineConfig({
     baseUrl:'https://tsharpslot1qa.devsd.innovasi.com/',
     //baseUrl:'https://sharpproductionmirror.devsd.innovasi.com/',
      //baseUrl:'https://www.google.com',
-   //specPattern:'cypress/integration/Testcases/*.js',
-   specPattern:'cypress/e2e/1-getting-started/*.js'
+   specPattern:'cypress/integration/Testcases/*.js',
+   //specPattern:'cypress/e2e/1-getting-started/*.js'
  
   },
 
   
+  
+
   watchForFileChanges:true,
   reporter: "junit",
   reporterOptions:{
