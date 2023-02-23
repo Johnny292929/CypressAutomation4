@@ -24,10 +24,10 @@ describe('Login', function()
     cy.fixture('DATA').then((data) => {
        cy.visit("/") 
         
-      ///cy.visit(Cypress.env('host')) 
+      // cy.visit(Cypress.env('host')) 
       
        this.data = data 
-  
+      
         cy.login1(this.data.name)
   
     })  
@@ -38,12 +38,13 @@ describe('Login', function()
     navBar.navigateToSignOutMenu() //
 
    
-   
   })
 
 it('Add Snivel', function(){  
   
 navBar.navigateToResourcesPage().click()
+
+
 
 //-- cy.lighthouse({
  // performance: 90,
@@ -66,7 +67,7 @@ resourcesPage.peopleSel().click()
   cy.contains('Cancel').click()
 debugger
 
-  
+   
   
 
 //resourcesPage.assignBttn().click()
