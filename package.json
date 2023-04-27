@@ -4,7 +4,7 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "test": "cypress run --key=cd3c4ccc-ee8a-4cf2-9901-c8b38317305d --record --parallel",
+        "test": "cypress run --key=cd3c4ccc-ee8a-4cf2-9901-c8b38317305d --record",
         "cy:open": "cypress open",
         "cy:run_spec": "npx cypress run --spec cypress/integration/Testcases/AddSnivel1.js --key=cd3c4ccc-ee8a-4cf2-9901-c8b38317305d --headless --record",
         "cy:run_browser": "npm run cy:run_spec -- --parallel --browser edge --group Edge  & npm run cy:run_spec -- --parallel --browser chrome --group Chrome",
@@ -20,11 +20,12 @@
     "dependencies": {
         "cjs-loader": "^0.1.0",
         "core-util-is": "^1.0.3",
-        "mochawesome-report-generator": "^6.2.0",
-        "cypress": "^12.5.1"
+        "cypress": "^12.5.1",
+        "mochawesome-report-generator": "^6.2.0"
     },
     "devDependencies": {
         "@cypress-audit/lighthouse": "^1.3.1",
-        "cypress": "^12.5.1"
+        "cypress": "^12.5.1",
+        "cypress-slow-down": "^1.2.1"
     }
 }

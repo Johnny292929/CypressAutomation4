@@ -37,7 +37,18 @@
         .click()
     cy.get('#signin')
         .click()
+
+        // // IF THERE IS A POPUP
+        // cy.window().then(function(){
+
+        //     if('#SummaryOfChangesHeaderButtonId').exists(){
+        //     cy.get('#SummaryOfChangesHeaderButtonId').click()
+
+
+        //  });
+
     cy.get('a:contains("Main")').should('be.visible')
+  
         
  } )
 

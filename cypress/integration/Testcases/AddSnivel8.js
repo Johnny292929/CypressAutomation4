@@ -4,13 +4,13 @@
 //slowCypressDown(2000)
 
 //import LoginPage from '../pageObjects/LoginPage'
-import navigationBar  from '../../support/page_objects/NavigationBar'
-import ResourcesPage from '../../support/page_objects/ResourcesPage'
-import { timesSeries } from 'async'
+import { navigateTo }  from '../../support/page_objects/navigationPage'
+import { onResourcesPage } from '../../support/page_objects/resourcesPage'
+//import { timesSeries } from 'async'
 
-const resourcesPage = new ResourcesPage()
-const navBar = new navigationBar()
-const peopleList = resourcesPage.peopleList
+//const resourcesPage = new ResourcesPage()
+//const navBar = new navigationBar()
+//const peopleList = resourcesPage.peopleList
 
 
 
@@ -36,19 +36,24 @@ describe('Login', function()
 
 it('Add Snivel', function(){  
   
+//navigateTo.ResourcesPage()
+navigateTo.resourcesPage()
+onResourcesPage.addSnivel()
+
+
 navBar.navigateToResourcesPage().click()
 
 //debugger
-//cy.pause()
-resourcesPage.newBttn().click()
+//cypause()
+//resourcesPage.newBttn().click()
 
-resourcesPage.snivelSel().click()
+//resourcesPage.snivelSel().click()
 
-resourcesPage.peopleSel().click()
-  .type("A").get(peopleList)
-  .contains(peopleList, this.data.peopleListItemName).click()
+//resourcesPage.peopleSel().click()
+  //.type("A").get(peopleList)
+  //.contains(peopleList, this.data.peopleListItemName).click()
 
-  cy.contains('Cancel').click()
+  //cy.contains('Cancel').click()
   
 
 //resourcesPage.assignBttn().click()

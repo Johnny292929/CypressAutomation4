@@ -11,23 +11,23 @@ import navigationBar  from '../../support/page_objects/NavigationBar'
 import ResourcesPage from '../../support/page_objects/ResourcesPage'
 import { timesSeries } from 'async'
 
-const resourcesPage = new ResourcesPage()
+//const resourcesPage = new ResourcesPage()
 const navBar = new navigationBar()
 const peopleList = resourcesPage.peopleList
 
 
 
-describe('Login', function()
+describe('Snivel', function()
 {
   
   beforeEach(function(){
     cy.fixture('DATA').then((data) => {
-       cy.visit("/") 
+     cy.visit("/") 
         
-      // cy.visit(Cypress.env('host')) 
+     //cy.visit(Cypress.env('host')) 
       
        this.data = data 
-      
+   
         cy.login1(this.data.name)
   
     })  
@@ -53,7 +53,7 @@ navBar.navigateToResourcesPage().click()
  // 'cumulative-layout-shift': 0.25
 // })  
 
-//cy.pause()
+//cy.pause()  
 
 
 resourcesPage.newBttn().click()
@@ -65,14 +65,10 @@ resourcesPage.peopleSel().click()
   .contains(peopleList, this.data.peopleListItemName).click()
   
   cy.contains('Cancel').click()
-debugger
+//debugger
 
    
-  
 
-//resourcesPage.assignBttn().click()
-  //cy.contains('Save').click()
- // cy.contains('Cancel').click()
  
 
   })

@@ -13,7 +13,6 @@ const navBar = new navigationBar()
 const peopleList = resourcesPage.peopleList
 
 
-
 describe('Login', function()
 {
   
